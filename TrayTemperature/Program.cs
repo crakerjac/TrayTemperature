@@ -283,7 +283,7 @@ namespace TrayTemperature {
 			//Updates the tooltip with the little hacky function
 			StringBuilder sb = new StringBuilder();
 			sb.AppendLine($"CPU: Avg {(float)CPUAcc / regCount:F2}{tempUnit} Min: {CPUMin} Max: {CPUMax}");
-			sb.Append($"GPU: Avg {(float)GPUAcc / regCount:F2}{tempUnit} Min: {GPUMin} Max: {GPUMax}");
+			//sb.Append($"GPU: Avg {(float)GPUAcc / regCount:F2}{tempUnit} Min: {GPUMin} Max: {GPUMax}");
 
 			SetNotifyIconText(ni, sb.ToString());
 
